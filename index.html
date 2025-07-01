@@ -802,4 +802,808 @@
         whatsAppFloatComponent(20, 20, '556799777676', 'Atendimento via WhatsApp');
     </script>
 </body>
+</html><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juninho Informática | Soluções em Tecnologia</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <meta name="description" content="Procurando por assistência técnica e soluções em informática em Naviraí-MS? A Juninho Informática oferece manutenção de computadores, redes, segurança e venda de equipamentos.">
+    <meta name="keywords" content="assistência técnica, informática, naviraí, manutenção de computadores, redes, segurança digital, venda de notebooks, periféricos">
+    <meta name="author" content="Juninho Informática">
+    <link rel="canonical" href="https://www.juninhoinformatica.com.br/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.juninhoinformatica.com.br/">
+    <meta property="og:title" content="Juninho Informática | Soluções em Tecnologia em Naviraí-MS">
+    <meta property="og:description" content="Assistência técnica especializada, venda de equipamentos, soluções em redes e segurança para sua casa ou empresa.">
+    <meta property="og:image" content="https://www.juninhoinformatica.com.br/logo.webp">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.juninhoinformatica.com.br/">
+    <meta property="twitter:title" content="Juninho Informática | Soluções em Tecnologia em Naviraí-MS">
+    <meta property="twitter:description" content="Assistência técnica especializada, venda de equipamentos, soluções em redes e segurança para sua casa ou empresa.">
+    <meta property="twitter:image" content="https://www.juninhoinformatica.com.br/logo.webp">
+    <meta name="theme-color" content="#ee5622">
+    <style>
+        :root {
+            --primary: #ee5622;
+            --secondary: #000;
+            --light: #f5f5f5;
+            --dark: #333;
+            --gray: #ececec;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--secondary);
+            color: white;
+            padding: 10px 0;
+        }
+
+        .top-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            font-size: 14px;
+        }
+
+        .contact-info a {
+            color: var(--primary);
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        nav {
+            background-color: var(--primary);
+            padding: 15px 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 150px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .logo h1 {
+            margin-left: 10px;
+            color: var(--secondary);
+            font-size: 24px;
+        }
+
+        .menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .menu li {
+            margin-left: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: var(--secondary);
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .menu a:hover {
+            color: white;
+        }
+
+        .mobile-toggle {
+            display: none;
+            font-size: 24px;
+            background: none;
+            border: none;
+            color: var(--secondary);
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./logo.webp');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--secondary);
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 60px 0;
+            background-color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--secondary);
+        }
+
+        .section-title p {
+            color: var(--dark);
+            margin-top: 10px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: var(--gray);
+            border-radius: 5px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-icon {
+            font-size: 40px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            color: var(--secondary);
+        }
+
+        .service-card p {
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* About Section */
+        .about {
+            padding: 60px 0;
+            background-color: var(--light);
+        }
+
+        .about-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-content h2 {
+            font-size: 2rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            margin-bottom: 15px;
+            line-height: 1.7;
+            color: var(--dark);
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Schedule Section */
+        .schedule {
+            padding: 60px 0;
+            background-color: white;
+        }
+
+        .schedule-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .schedule-content h2 {
+            font-size: 2rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+
+        .schedule-content p {
+            margin-bottom: 20px;
+            line-height: 1.7;
+            color: var(--dark);
+        }
+
+        .schedule-list {
+            list-style: none;
+        }
+
+        .schedule-list li {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: var(--gray);
+            border-radius: 5px;
+        }
+
+        .day {
+            font-weight: bold;
+            color: var(--secondary);
+        }
+
+        .hours {
+            color: var(--dark);
+        }
+
+        .map {
+            height: 100%;
+            min-height: 350px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 60px 0;
+            background-color: var(--light);
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .contact-form h2 {
+            font-size: 2rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+
+        .contact-form form {
+            display: grid;
+            gap: 15px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            background-color: var(--primary);
+            color: var(--secondary);
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: var(--secondary);
+            color: white;
+        }
+
+        .contact-info-container {
+            background-color: var(--secondary);
+            padding: 30px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .contact-info-container h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .contact-icon {
+            margin-right: 15px;
+            font-size: 24px;
+            color: var(--primary);
+        }
+
+        .contact-detail h3 {
+            margin-bottom: 5px;
+            color: var(--primary);
+        }
+
+        .contact-detail p {
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary);
+            color: white;
+            padding: 40px 0 20px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+        }
+
+        .footer-bottom p {
+            font-size: 14px;
+            color: #888;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .about-container,
+            .schedule-container,
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .map {
+                min-height: 300px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-toggle {
+                display: block;
+            }
+
+            .menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                height: 100vh;
+                background-color: var(--primary);
+                flex-direction: column;
+                justify-content: flex-start;
+                padding-top: 60px;
+                transition: right 0.3s;
+                z-index: 100;
+            }
+
+            .menu.active {
+                right: 0;
+            }
+
+            .menu li {
+                margin: 0;
+                width: 100%;
+                text-align: center;
+                padding: 15px 0;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            }
+
+            .menu-close {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                font-size: 24px;
+                background: none;
+                border: none;
+                color: var(--secondary);
+                cursor: pointer;
+            }
+
+            .hero {
+                height: 400px;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <!-- FontAwesome for icons -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container top-info">
+            <div class="contact-info">
+                <a href="tel:6734617676"><i class="fas fa-phone"></i> (67) 3461-7676</a>
+                <a href="https://wa.me/556799777676"><i class="fab fa-whatsapp"></i> (67) 99977-7676</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/juninhoinformaticanavirai" target="_blank" title="Facebook" style="color: #fff; font-size: 1.5rem; margin-right: 5px;"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/juninhoinformatica/" target="_blank" title="Instagram" style="color: #fff; font-size: 1.5rem; margin-right: 5px;"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/556799777676" target="_blank" title="WhatsApp" style="color: #fff; font-size: 1.5rem;"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="./logo.webp" alt="Juninho Informática" width="150px" height="150px">
+                <h1>Juninho Informática</h1>
+            </div>
+            <button class="mobile-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="menu" id="menu">
+                <button class="menu-close hide mobile-toggle" id="menuClose">
+                    <i class="fas fa-times"></i>
+                </button>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#horarios">Horários</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSd7Dm5fSmTdT-i1WicbJA49olXtHIxQG6340DAiDUFGYIYhkA/viewform">Trabalhe conosco</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container hero-content">
+            <h2>Soluções Completas em Informática</h2>
+            <p>Assistência técnica, vendas de computadores, notebooks, periféricos e acessórios. Atendimento especializado para sua empresa ou residência.</p>
+            <a href="#contato" class="btn">Entre em Contato</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossos Serviços</h2>
+                <p>Conheça as soluções que oferecemos para você e sua empresa</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Manutenção de Computadores</h3>
+                    <p>Conserto e manutenção de desktops e notebooks, diagnóstico e solução de problemas de hardware e software.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Redes e Infraestrutura</h3>
+                    <p>Instalação, configuração e manutenção de redes locais, servidores, switches e roteadores.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Segurança Digital</h3>
+                    <p>Proteção contra vírus, malware, ransomware e outras ameaças digitais para sua empresa ou residência.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Venda de Equipamentos</h3>
+                    <p>Computadores, notebooks, periféricos, acessórios e peças de reposição com garantia e preço justo.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Redes Wi-Fi</h3>
+                    <p>Configuração e suporte em redes, com soluções em roteadores sem fio, Unifi, Mikrotik e outros.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Suporte Técnico</h3>
+                    <p>Atendimento personalizado para resolver problemas técnicos, tanto remotamente quanto presencialmente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="sobre">
+        <div class="container about-container">
+            <div class="about-content">
+                <h2>Sobre a Juninho Informática</h2>
+                <p>Desde 2014, a Juninho Informática se tornou referência em soluções tecnológicas em Naviraí e região, oferecendo atendimento de qualidade e profissionais altamente capacitados.</p>
+                <p>Nossa missão é proporcionar as melhores soluções em tecnologia, com foco na satisfação dos clientes e no compromisso com a excelência em todos os serviços prestados.</p>
+                <p>Contamos com uma equipe de técnicos especializados, prontos para atender às necessidades específicas de cada cliente, seja para uso pessoal ou empresarial.</p>
+                <a href="#contato" class="btn">Fale Conosco</a>
+            </div>
+            <div class="about-image">
+                <img src="./logo.webp" alt="Juninho Informática" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule" id="horarios">
+        <div class="container schedule-container">
+            <div class="schedule-content">
+                <h2>Horário de Funcionamento</h2>
+                <p>Estamos disponíveis para atendê-lo nos seguintes horários:</p>
+                <ul class="schedule-list">
+                    <li>
+                        <span class="day">Segunda-feira</span>
+                        <span class="hours">08:00–11:00, 13:00–18:00</span>
+                    </li>
+                    <li>
+                        <span class="day">Terça-feira</span>
+                        <span class="hours">08:00–11:00, 13:00–18:00</span>
+                    </li>
+                    <li>
+                        <span class="day">Quarta-feira</span>
+                        <span class="hours">08:00–11:00, 13:00–18:00</span>
+                    </li>
+                    <li>
+                        <span class="day">Quinta-feira</span>
+                        <span class="hours">08:00–11:00, 13:00–18:00</span>
+                    </li>
+                    <li>
+                        <span class="day">Sexta-feira</span>
+                        <span class="hours">08:00–11:00, 13:00–18:00</span>
+                    </li>
+                    <li>
+                        <span class="day">Sábado</span>
+                        <span class="hours">08:00–12:00</span>
+                    </li>
+                    <li>
+                        <span class="day">Domingo</span>
+                        <span class="hours">Fechado</span>
+                    </li>
+                </ul>
+                <p style="margin-top: 20px;">Endereço: Av. Campo Grande, 137a - Centro, Naviraí - MS, 79950-000</p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3697.7041989473827!2d-54.1971653!3d-23.061798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x948b0b8e1e83fc4d%3A0x7f9e792543121fa7!2sAv.%20Campo%20Grande%2C%20137a%20-%20Centro%2C%20Navira%C3%AD%20-%20MS%2C%2079950-000!5e0!3m2!1spt-BR!2sbr!4v1713162358688!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contato">
+        <div class="container contact-container">
+            <div class="contact-form">
+                <h2>Entre em Contato</h2>
+                <a href="https://wa.me/556799777676" target="_blank" class="btn">Fale Conosco</a>
+            </div>
+            <div class="contact-info-container">
+                <h2>Informações de Contato</h2>
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-detail">
+                        <h3>Endereço</h3>
+                        <p>Av. Campo Grande, 137a - Centro, Naviraí - MS, 79950-000</p>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-detail">
+                        <h3>Telefone</h3>
+                        <p>(67) 3461-7676</p>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-detail">
+                        <h3>Horário</h3>
+                        <p>Segunda a Sexta: 08:00–11:00, 13:00–18:00</p>
+                        <p>Sábado: 08:00–12:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-section">
+                <h3>Juninho Informática</h3>
+                <p>Soluções completas em informática para empresas e residências em Naviraí-MS e região.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#horarios">Horários</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSd7Dm5fSmTdT-i1WicbJA49olXtHIxQG6340DAiDUFGYIYhkA/viewform">Trabalhe conosco</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Serviços</h3>
+                <ul class="footer-links">
+                    <li><a href="#servicos">Manutenção de Computadores</a></li>
+                    <li><a href="#servicos">Redes e Infraestrutura</a></li>
+                    <li><a href="#servicos">Segurança Digital</a></li>
+                    <li><a href="#servicos">Venda de Equipamentos</a></li>
+                    <li><a href="#servicos">Suporte Técnico</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-phone"></i> (67) 3461-7676</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Av. Campo Grande, 137a - Centro, Naviraí - MS</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2025 Juninho Informática. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const menuClose = document.getElementById('menuClose');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.add('active');
+        });
+
+        menuClose.addEventListener('click', () => {
+            menu.classList.remove('active');
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                menu.classList.remove('active');
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script defer src="./whatsAppFloatComponent.js"></script>
+    <script defer>
+        whatsAppFloatComponent(20, 20, '556799777676', 'Atendimento via WhatsApp');
+    </script>
+</body>
 </html>
