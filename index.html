@@ -531,7 +531,7 @@
         <div class="container top-info">
             <div class="contact-info">
                 <a href="tel:6734617676"><i class="fas fa-phone"></i> (67) 3461-7676</a>
-                <a href="mailto:contato@juninhoinformatica.com.br"><i class="fas fa-envelope"></i> contato@juninhoinformatica.com.br</a>
+                <a href="https://wa.me/556799777676"><i class="fab fa-whatsapp"></i> (67) 99977-7676</a>
             </div>
             <div class="social-links">
                 <a href="https://www.facebook.com/juninhoinformaticanavirai" target="_blank" title="Facebook" style="color: #fff; font-size: 1.5rem; margin-right: 5px;"><i class="fab fa-facebook"></i></a>
@@ -693,21 +693,7 @@
         <div class="container contact-container">
             <div class="contact-form">
                 <h2>Entre em Contato</h2>
-                <form id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Seu nome" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" id="phone" name="phone" placeholder="Seu telefone">
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Sua mensagem" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Enviar Mensagem</button>
-                </form>
+                <a href="https://wa.me/556799777676" target="_blank" class="btn">Fale Conosco</a>
             </div>
             <div class="contact-info-container">
                 <h2>Informações de Contato</h2>
@@ -810,19 +796,6 @@
                     behavior: 'smooth'
                 });
             });
-        });
-
-        // Form Submission
-        const contactForm = document.getElementById('contactForm');
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            const message = document.getElementById('message').value;
-            const messageToUrl = encodeURIComponent(`Olá, meu nome é ${name}. Meu e-mail é ${email}. Meu telefone é ${phone}. ${message}`);
-            const url = 'https://api.whatsapp.com/send/?phone=556799777676&text='+messageToUrl;
-            window.open(url, '_blank');
         });
     </script>
     <script src="./whatsAppFloatComponent.js"></script>
